@@ -12,9 +12,11 @@ function App() {
     <Intro/>
     </>
   }
+  
   navigation = {
   <Navbar/>
   }
+  footerSelector= {"hey"}
   />  
   </div>
 

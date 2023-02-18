@@ -1,11 +1,18 @@
 import React from 'react';
-
+import { Container } from '@cloudscape-design/components';
 import Button from '@cloudscape-design/components/button'
 import Box from '@cloudscape-design/components/box';
+
 import './intro.css'
 function Intro(){
-    
-    return <div className='About'>
+    const year = new Date().getFullYear();
+
+    return <Container 
+    footer ={<Box textAlign='center'>
+     Foforane Thakgalang &copy; {year}
+    </Box>}
+    >
+     <div className='About'>
       <div className='Picture'>
         <img src="https://i.imgur.com/qk2yEb4.jpeg" referrerPolicy='no-referrer' alt="" />
         </div>
@@ -20,6 +27,7 @@ function Intro(){
     href='mailto:thakgalang.cyber@gmail.com'>Get in touch</Button>
     </div>
   </div>
+  </Container>
 }
 
 export default Intro;
