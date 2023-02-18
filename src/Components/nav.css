@@ -1,0 +1,10 @@
+.wrapper ul li{
+    list-style: none;
+    margin-top: 0.5rem;
+}
+.wrapper ul li a {
+    text-decoration: none;
+}
+.toggle{
+    margin-left: 2.2rem;
+}
