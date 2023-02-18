@@ -21,7 +21,7 @@
 @media (max-width: 1005px){
     .About{
 flex-direction:column;
-height : 75vh;
+height: unset;
 }
 .Picture{
     margin: 2rem;
