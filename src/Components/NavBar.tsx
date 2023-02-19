@@ -13,15 +13,16 @@ function Nav(){
       );
 
      const mode = window.localStorage.getItem('mode');
-     let modeOnLoad :boolean;
-     if(mode !== ''){
+
+     let modeOnLoad : boolean;
+     if(mode !== null){
       modeOnLoad = mode === 'light'?  false : true;
      }else {
        modeOnLoad = dark; 
      }
       const [checked, setChecked] = React.useState(modeOnLoad);
       checked ? applyMode(Mode.Dark) : applyMode(Mode.Light);
-    const color = mode === 'light'? 'black' : 'white';
+    const color = checked? 'white' : 'black';
       const style = {
         color : color
         }
