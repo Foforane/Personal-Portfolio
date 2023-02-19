@@ -20,12 +20,10 @@ function App() {
      Foforane Thakgalang &copy; {new Date().getFullYear()}
     </Box>}
     >
-    <Routes>
-      <Route path='/' element ={<Intro/>}/>
-      <Route path='/About' element ={<Intro/>}/>
-      <Route path='/Experience' element ={<Experience/>}/>
-      <Route path='/Education' element ={<Education/>}/>
-    </Routes>
+    <Intro/>
+   
+    <Experience/>
+    <Education/>
     </Container>
   
     </>

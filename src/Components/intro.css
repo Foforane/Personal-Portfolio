@@ -6,6 +6,7 @@
     flex-direction: row;
     justify-content : center;
     height : 75vh;
+    margin-bottom: 5rem ;
 }
 .Picture{
     margin: 3rem;
