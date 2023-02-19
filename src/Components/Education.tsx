@@ -38,7 +38,7 @@ function Education(){
     link : 'https://www.smu.ac.za/',
     degree : "BSc (Hons) Computer Sciences",
     modules :'Research, Mobile Development, Artificial Intelligence, Advanced Database Management Systems and Health Informatics.',
-    duration : "December 2022 - March 2023",
+    duration : "March 2022 - December 2022",
     average : "71%"
     },
     {
