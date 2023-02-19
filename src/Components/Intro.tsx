@@ -7,12 +7,7 @@ import './intro.css'
 function Intro(){
     const year = new Date().getFullYear();
 
-    return <Container 
-    footer ={<Box textAlign='center'>
-     Foforane Thakgalang &copy; {year}
-    </Box>}
-    >
-     <div className='About'>
+    return <div className='About'>
       <div className='Picture'>
         <img src="https://i.imgur.com/qk2yEb4.jpeg" referrerPolicy='no-referrer' alt="" />
         </div>
@@ -21,13 +16,13 @@ function Intro(){
     <Box variant="h1">Foforane Thakgalang</Box>
     <Box variant='strong' color="text-body-secondary">Software Engineer</Box>
     <Box variant='p'>A dedicated individual with Honours in Computer Sciences, having passion for Coding since 2016. 
-    I've written Softwares that are used in the real world, I am also driven by curiosity and desire to help improve lives through software.
+    I've written Softwares that are used in the real world, I am driven by curiosity and desire to help improve lives through software.
     </Box>
     <Button variant='primary' 
     href='mailto:thakgalang.cyber@gmail.com'>Get in touch</Button>
     </div>
   </div>
-  </Container>
+
 }
 
 export default Intro;

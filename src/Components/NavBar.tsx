@@ -6,15 +6,22 @@ import { applyMode, Mode } from '@cloudscape-design/global-styles';
 
 import './nav.css'
 function Nav(){
-    
+
+    const dark = window.matchMedia('(prefers-color-scheme: dark)').matches
     const [activeHref, setActiveHref] = React.useState(
         "#/page1"
       );
+
      const mode = window.localStorage.getItem('mode');
-     const modeOnLoad = mode === 'light'?  false : true;
+     let modeOnLoad :boolean;
+     if(mode !== ''){
+      modeOnLoad = mode === 'light'?  false : true;
+     }else {
+       modeOnLoad = dark; 
+     }
       const [checked, setChecked] = React.useState(modeOnLoad);
       checked ? applyMode(Mode.Dark) : applyMode(Mode.Light);
-    const color = checked? 'white' : 'black';
+    const color = mode === 'light'? 'black' : 'white';
       const style = {
         color : color
         }
@@ -43,13 +50,18 @@ function Nav(){
  <div  className='wrapper'>
                    <ul>
                         <li>
-                            <Link style={style} to='/'>
+                            <Link style={style} to='/About'>
                                 <span className='item'>About</span>
                             </Link>
                         </li>
                         <li>
                             <Link style={style} to='/Experience' >
                                 <span className='item'>Work Experience</span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link style={style} to='/Education' >
+                                <span className='item'>Education</span>
                             </Link>
                         </li>
                        
