@@ -8,9 +8,6 @@ import './nav.css'
 function Nav(){
 
     const dark = window.matchMedia('(prefers-color-scheme: dark)').matches
-    const [activeHref, setActiveHref] = React.useState(
-        "#/page1"
-      );
 
      const mode = window.localStorage.getItem('mode');
 
@@ -29,14 +26,7 @@ function Nav(){
    return <> 
    
    <SideNavigation
-   activeHref={activeHref}
    header={{ href: "/", text: "Foforane Thakgalang" }}
-   onFollow={event => {
-     if (!event.detail.external) {
-      
-       setActiveHref(event.detail.href);
-     }
-   }}
  />
  <div className="toggle">
  <Toggle onChange={({ detail }) =>{
