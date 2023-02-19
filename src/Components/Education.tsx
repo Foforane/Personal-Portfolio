@@ -3,7 +3,7 @@ import Cards  from "@cloudscape-design/components/cards";
 import Header  from "@cloudscape-design/components/header";
 import Link  from "@cloudscape-design/components/link";
 function Education(){
-    return <div>
+    return <div id="Education">
     <Cards
     cardDefinition={{
         header: item => (

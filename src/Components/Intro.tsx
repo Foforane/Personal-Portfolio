@@ -1,13 +1,11 @@
 import React from 'react';
-import { Container } from '@cloudscape-design/components';
+import { SpaceBetween } from '@cloudscape-design/components';
 import Button from '@cloudscape-design/components/button'
 import Box from '@cloudscape-design/components/box';
 
 import './intro.css'
 function Intro(){
-    const year = new Date().getFullYear();
-
-    return <div className='About'>
+    return <div id='About' className='About'>
       <div className='Picture'>
         <img src="https://i.imgur.com/qk2yEb4.jpeg" referrerPolicy='no-referrer' alt="" />
         </div>
@@ -18,8 +16,15 @@ function Intro(){
     <Box variant='p'>A dedicated individual with Honours in Computer Sciences, having passion for Coding since 2016. 
     I've written Softwares that are used in the real world, I am driven by curiosity and desire to help improve lives through software.
     </Box>
-    <Button variant='primary' 
-    href='mailto:thakgalang.cyber@gmail.com'>Get in touch</Button>
+    <br></br>
+    <SpaceBetween size='xs' direction='horizontal'>
+    <Button 
+    href='mailto:thakgalang.cyber@gmail.com'>Get in touch
+    </Button>
+    <Button 
+    href='#'>View Projects
+    </Button>
+    </SpaceBetween>
     </div>
   </div>
 

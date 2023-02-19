@@ -1,6 +1,6 @@
 import React from 'react';
 import Intro from './Components/Intro';
-import Experience from './Components/Exprience';
+import Experience from './Components/Experience';
 import Navbar from './Components/NavBar';
 import  AppLayout  from '@cloudscape-design/components/app-layout';
 import Box from '@cloudscape-design/components/box';
@@ -20,12 +20,10 @@ function App() {
      Foforane Thakgalang &copy; {new Date().getFullYear()}
     </Box>}
     >
-    <Routes>
-      <Route path='/' element ={<Intro/>}/>
-      <Route path='/About' element ={<Intro/>}/>
-      <Route path='/Experience' element ={<Experience/>}/>
-      <Route path='/Education' element ={<Education/>}/>
-    </Routes>
+    <Intro/>
+   
+    <Experience/>
+    <Education/>
     </Container>
   
     </>

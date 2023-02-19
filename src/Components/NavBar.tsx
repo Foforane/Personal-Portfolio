@@ -3,7 +3,7 @@ import SideNavigation from '@cloudscape-design/components/side-navigation';
 import {Link} from 'react-router-dom';
 import Toggle from '@cloudscape-design/components/toggle';
 import { applyMode, Mode } from '@cloudscape-design/global-styles';
-
+import  Links from '@cloudscape-design/components/link';
 import './nav.css'
 function Nav(){
 
@@ -23,10 +23,16 @@ function Nav(){
       const style = {
         color : color
         }
-   return <> 
-   
-   <SideNavigation
-   header={{ href: "/", text: "Foforane Thakgalang" }}
+   return  <> 
+    <SideNavigation
+   header={{ href: "#About", text: "Foforane Thakgalang" }}
+   onFollow = {()=>{}}
+   items={[
+    {type:'link', text: "About", href: "#About" },
+    { type: "link", text: "Experience", href: "#Experience" },
+    { type: "link", text: "Education", href: "#Education" },
+    { type: "divider" },
+   ]}
  />
  <div className="toggle">
  <Toggle onChange={({ detail }) =>{
@@ -37,27 +43,6 @@ function Nav(){
  }
       } checked = {checked}>dark</Toggle>
  </div>
- 
- <div  className='wrapper'>
-                   <ul>
-                        <li>
-                            <Link style={style} to='/About'>
-                                <span className='item'>About</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link style={style} to='/Experience' >
-                                <span className='item'>Work Experience</span>
-                            </Link>
-                        </li>
-                        <li>
-                            <Link style={style} to='/Education' >
-                                <span className='item'>Education</span>
-                            </Link>
-                        </li>
-                       
-                    </ul>
-                </div>
  </>
 }
 
