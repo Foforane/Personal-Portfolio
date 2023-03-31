@@ -25,12 +25,12 @@ function Nav(){
         }
    return  <> 
     <SideNavigation
-   header={{ href: "#About", text: "Foforane Thakgalang" }}
+   header={{ href: "/", text: "Foforane Thakgalang" }}
    onFollow = {()=>{}}
    items={[
-    {type:'link', text: "About", href: "#About" },
-    { type: "link", text: "Experience", href: "#Experience" },
-    { type: "link", text: "Education", href: "#Education" },
+    {type:'link', text: "About", href: "/#About" },
+    { type: "link", text: "Experience", href: "/#Experience" },
+    { type: "link", text: "Education", href: "/#Education" },
     { type: "divider" },
    ]}
  />

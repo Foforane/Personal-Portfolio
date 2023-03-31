@@ -2,9 +2,10 @@ import React from 'react';
 import { SpaceBetween } from '@cloudscape-design/components';
 import Button from '@cloudscape-design/components/button'
 import Box from '@cloudscape-design/components/box';
-
+import { useNavigate } from 'react-router-dom';
 import './intro.css'
 function Intro(){
+  const navigate = useNavigate();
     return <div id='About' className='About'>
       <div className='Picture'>
         <img src="https://i.imgur.com/qk2yEb4.jpeg" referrerPolicy='no-referrer' alt="" />
@@ -22,7 +23,9 @@ function Intro(){
     href='mailto:thakgalang.cyber@gmail.com'>Get in touch
     </Button>
     <Button 
-    href='#'>View Projects
+    onClick={()=>{
+      navigate('/Projects')
+    }}>View Projects
     </Button>
     </SpaceBetween>
     </div>

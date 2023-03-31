@@ -6,26 +6,35 @@ import  AppLayout  from '@cloudscape-design/components/app-layout';
 import Box from '@cloudscape-design/components/box';
 import { Container } from '@cloudscape-design/components';
 import Education from './Components/Education';
-import './Components/intro.css';
+import Projects from './Components/Project';
 import { Route,Routes } from 'react-router-dom';
+import './Components/intro.css';
 function App() {
 
   return (
   <AppLayout
-  content ={
+  content =
+  {
     <>
     <Container 
-    
      footer ={<Box textAlign='center'>
      Foforane Thakgalang &copy; {new Date().getFullYear()}
     </Box>}
     >
-    <Intro/>
-   
+    <Routes>
+    <Route path='/' 
+    element ={<>
+     <Intro/>
     <Experience/>
     <Education/>
+    </>}
+    />
+   <Route 
+   path='/Projects'
+   element = {<Projects/>}
+   />
+    </Routes>
     </Container>
-  
     </>
   }
   
