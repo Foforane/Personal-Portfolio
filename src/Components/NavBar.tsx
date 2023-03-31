@@ -26,7 +26,6 @@ function Nav(){
    return  <> 
     <SideNavigation
    header={{ href: "/", text: "Foforane Thakgalang" }}
-   onFollow = {()=>{}}
  />
  <div className="toggle">
  <Toggle onChange={({ detail }) =>{
