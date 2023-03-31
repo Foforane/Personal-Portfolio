@@ -1,7 +1,6 @@
 import React from 'react';
 import Intro from './Components/Intro';
 import Experience from './Components/Experience';
-import Navbar from './Components/NavBar';
 import  AppLayout  from '@cloudscape-design/components/app-layout';
 import Box from '@cloudscape-design/components/box';
 import { Container } from '@cloudscape-design/components';
@@ -9,6 +8,7 @@ import Education from './Components/Education';
 import Projects from './Components/Project';
 import { Route,Routes } from 'react-router-dom';
 import './Components/intro.css';
+import NavBar from './Components/NavBar';
 function App() {
 
   return (
@@ -37,10 +37,7 @@ function App() {
     </Container>
     </>
   }
-  
-  navigation = {
-  <Navbar/>
-  }
+  navigation = {<NavBar/>}
 toolsHide = {true}
   />  
     
