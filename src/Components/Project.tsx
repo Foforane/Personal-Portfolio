@@ -39,7 +39,7 @@ cardDefinition={{
             id:"source",
             content : item => <SpaceBetween direction='horizontal' size='xs'>
                 <Button target='_Blank' href={item.codeLink}>
-                  View Source Code  
+                Source Code  
                 </Button>
                 <Button target='_Blank' href={item.LiveSite}>
                   Live Site 
