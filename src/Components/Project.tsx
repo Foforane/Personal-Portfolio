@@ -51,7 +51,18 @@ cardDefinition={{
         }
       ]
 }}
-items={[{
+items={[
+    {
+        img : me,
+        codeLink : 'https://github.com/Foforane/Personal-Portfolio',
+        LiveSite : 'https://thakgalang-foforane.netlify.app/',
+        name : "My Personal Website",
+        description :"This is my personal portfolio where you will a bit more about me and my skill set.",
+        duration : "August 2022 - Present",
+        tools : "Typescript, React and CloudScape."
+        },
+    {
+
 img : SMUChess,
 codeLink : 'https://github.com/Foforane/chessSMU',
 LiveSite : 'https://smu-chess.netlify.app/',
@@ -60,15 +71,7 @@ description :"A website to live rank chess players at SMU according to their rat
 duration : "March 2022 - Present",
 tools : "Typescript, React, CloudScape and Lichess API."
 },
-{
-    img : me,
-    codeLink : 'https://github.com/Foforane/Personal-Portfolio',
-    LiveSite : 'https://thakgalang-foforane.netlify.app/',
-    name : "My Personal Website",
-    description :"This is my personal portfolio where you will a bit more about me and my skill set.",
-    duration : "August 2022 - Present",
-    tools : "Typescript, React and CloudScape."
-    },
+
     {
         img : prosira,
         codeLink : '',
