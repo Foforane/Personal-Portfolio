@@ -19,10 +19,7 @@ function Nav(){
      }
       const [checked, setChecked] = React.useState(modeOnLoad);
       checked ? applyMode(Mode.Dark) : applyMode(Mode.Light);
-    const color = checked? 'white' : 'black';
-      const style = {
-        color : color
-        }
+
    return  <> 
     <SideNavigation
    header={{ href: "/", text: "Foforane Thakgalang" }}

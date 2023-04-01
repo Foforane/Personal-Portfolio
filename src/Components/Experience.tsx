@@ -2,7 +2,7 @@ import React from 'react';
 import Link from '@cloudscape-design/components/link';
 import Cards from '@cloudscape-design/components/cards';
 import Header from '@cloudscape-design/components/header';
-function Ex(){
+function Exp(){
 return <div id='Experience'>
 <Cards
 cardDefinition={{
@@ -55,4 +55,4 @@ header={<Header>Work Experience</Header>}
 </div>
 }
 
-export default Ex;
+export default Exp;
