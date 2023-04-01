@@ -8,7 +8,7 @@ function Intro(){
   const navigate = useNavigate();
     return <div id='About' className='About'>
       <div className='Picture'>
-        <img src="../../Cyber.jpeg" referrerPolicy='no-referrer' alt="" />
+        <img src="../../Cyber.jpeg" alt="" />
         </div>
       <div className='content'>
     <Box color="text-body-secondary">Hello World, I am</Box>

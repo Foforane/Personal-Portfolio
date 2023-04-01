@@ -12,7 +12,7 @@ return <>
  <Cards
 cardDefinition={{
     header: item => (
-        <img style={style} src ={item.img} width= '320px'/>
+        <img style={style} src ={item.img} width= '100%'/>
       ),
       sections: [
         {
