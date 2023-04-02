@@ -6,7 +6,8 @@ import Rating from '@mui/material/Rating';
 import { StarBorder } from '@mui/icons-material';
 
 function Skills(){
-return <Cards
+ const mode = window.localStorage.getItem('mode');
+ return <Cards
 cardDefinition={{
     header: item => (
     <Link href= {item.link} target= "_blank" fontSize="heading-m">{item.Language}</Link>
@@ -15,7 +16,7 @@ cardDefinition={{
         {
             id: "rating",
             header : "Rating",
-            content : item => <Rating precision={0.5} emptyIcon ={<StarBorder style={{color:'white'}}/>}  name="read-only" value={item.value}  readOnly />
+            content : item => <Rating precision={0.5} emptyIcon ={<StarBorder style={{color: mode === 'dark' ? 'white' : 'black' }}/>}  name="read-only" value={item.value}  readOnly />
         },
         {
           id: "duration",
