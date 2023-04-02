@@ -58,9 +58,9 @@ items={[
         LiveSite : 'https://thakgalang-foforane.netlify.app/',
         disabledLink: false,
         name : "My Personal Website",
-        description :"This is my personal portfolio where you will a bit more about me and my skill set.",
+        description :"This is my personal portfolio where you will learn a bit more about me and my skill set.",
         duration : "August 2022 - Present",
-        tools : "Typescript, React and CloudScape."
+        tools : "Typescript, React, Material UI and CloudScape."
         },
     {
 
