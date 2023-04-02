@@ -41,10 +41,10 @@ cardDefinition={{
         {
             id:"source",
             content : item => <SpaceBetween direction='horizontal' size='xs'>
-                <Button  href={item.codeLink}>
+                <Button disabled = {item.disabledLink}  href={item.codeLink}>
                 Source Code  
                 </Button>
-                <Button  href={item.LiveSite}>
+                <Button disabled = {item.disabledLink} href={item.LiveSite}>
                   Live Site 
                 </Button>
             </SpaceBetween>
@@ -56,6 +56,7 @@ items={[
         img : me,
         codeLink : 'https://github.com/Foforane/Personal-Portfolio',
         LiveSite : 'https://thakgalang-foforane.netlify.app/',
+        disabledLink: false,
         name : "My Personal Website",
         description :"This is my personal portfolio where you will a bit more about me and my skill set.",
         duration : "August 2022 - Present",
@@ -66,6 +67,7 @@ items={[
 img : SMUChess,
 codeLink : 'https://github.com/Foforane/chessSMU',
 LiveSite : 'https://smu-chess.netlify.app/',
+disabledLink: false,
 name : "SMU Lichess Ranking System",
 description :"A website to live rank chess players at SMU according to their rating using the Lichess API. It was initially created with PHP then got recreated with Typescript and React.",
 duration : "March 2022 - Present",
@@ -76,6 +78,7 @@ tools : "Typescript, React, CloudScape and Lichess API."
         img : prosira,
         codeLink : '',
         LiveSite : '',
+        disabledLink: true,
         name : "ProSiRa DJ's Website",
         description :"A personal website for my friend who is an Artist and in need of a Website to show his music. This site is currently under construction and planned to go to production by end of May.",
         duration : "February 2023 - Present",
@@ -85,6 +88,7 @@ tools : "Typescript, React, CloudScape and Lichess API."
             img : smuParkingDisc,
             codeLink : '',
             LiveSite : '',
+            disabledLink: true,
             name : "Sefako Makgatho Health Science University Parking Disc",
             description :"This Website helps SMU to better manage parking spaces in the Institution, all stuff members and students register their cars on the site. The source code and link of the website are not available as this is an Internal website.",
             duration : "March 2022 - December 2022",

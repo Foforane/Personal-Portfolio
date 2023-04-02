@@ -6,6 +6,7 @@ import Box from '@cloudscape-design/components/box';
 import { Container } from '@cloudscape-design/components';
 import Education from './Components/Education';
 import Projects from './Components/Project';
+import Skills from './Components/Skills';
 import { Route,Routes } from 'react-router-dom';
 import './Components/intro.css';
 import NavBar from './Components/NavBar';
@@ -27,6 +28,7 @@ function App() {
      <Intro/>
     <Experience/>
     <Education/>
+    <Skills/>
     </>}
     />
    <Route 
