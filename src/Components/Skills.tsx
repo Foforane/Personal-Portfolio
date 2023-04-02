@@ -3,7 +3,8 @@ import Link from '@cloudscape-design/components/link';
 import Cards from '@cloudscape-design/components/cards';
 import Header from '@cloudscape-design/components/header';
 import Rating from '@mui/material/Rating';
-import Typography from '@mui/material/Typography';
+import { StarBorder } from '@mui/icons-material';
+
 function Skills(){
 return <Cards
 cardDefinition={{
@@ -14,7 +15,7 @@ cardDefinition={{
         {
             id: "rating",
             header : "Rating",
-            content : item => <Rating precision={0.5}  name="read-only" value={item.value}  readOnly />
+            content : item => <Rating precision={0.5} emptyIcon ={<StarBorder style={{color:'white'}}/>}  name="read-only" value={item.value}  readOnly />
         },
         {
           id: "duration",
@@ -51,9 +52,9 @@ items={[
     },
     {
         Language : "Python",
-        value : 4,
-        link : 'https://cplusplus.com/doc/tutorial/',
-        level : "Basics, No Practical Exprience",
+        value : 3.5,
+        link : 'https://www.python.org/',
+        level : "Basic knowledge of the language, No Practical Exprience",
         },
     {
         Language : "MySql",

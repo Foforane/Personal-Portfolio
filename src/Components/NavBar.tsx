@@ -3,7 +3,6 @@ import SideNavigation from '@cloudscape-design/components/side-navigation';
 import {Link} from 'react-router-dom';
 import Toggle from '@cloudscape-design/components/toggle';
 import { applyMode, Mode } from '@cloudscape-design/global-styles';
-import  Links from '@cloudscape-design/components/link';
 import './nav.css'
 function Nav(){
 
