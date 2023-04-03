@@ -27,8 +27,8 @@ function Nav(){
  <Toggle onChange={({ detail }) =>{
        const modeOnChange = detail.checked? 'dark' : 'light';
         window.localStorage.setItem('mode',modeOnChange) 
-        setChecked(detail.checked)
-          
+        setChecked(detail.checked);
+        window.location.reload();
  }
       } checked = {checked}>dark</Toggle>
  </div>
