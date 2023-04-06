@@ -52,6 +52,12 @@ items={[
     level : "Basics, No Practical Exprience",
     },
     {
+        Language : "C#",
+        value : 4,
+        link : 'https://learn.microsoft.com/en-us/dotnet/csharp/',
+        level : "Extensive Knowledgde of the Lanuage, Limited Practical Exprience",
+        },
+    {
         Language : "Python",
         value : 3.5,
         link : 'https://www.python.org/',
