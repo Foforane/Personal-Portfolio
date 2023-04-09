@@ -82,7 +82,7 @@ tools : "Typescript, React, CloudScape and Lichess API."
         name : "ProSiRa DJ's Website",
         description :"A personal website for my friend who is an Artist and in need of a Website to show his music. This site is currently under construction and planned to go to production by end of May.",
         duration : "February 2023 - Present",
-        tools : "Typescript, React, Spotify API and Material UI."
+        tools : "Typescript, React, ASP.NET, Spotify API and Material UI."
         },
         {
             img : smuParkingDisc,
