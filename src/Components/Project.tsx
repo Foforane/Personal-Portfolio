@@ -71,7 +71,7 @@ disabledLink: false,
 name : "SMU Lichess Ranking System",
 description :"A website to live rank chess players at SMU according to their rating using the Lichess API. It was initially created with PHP then got recreated with Typescript and React.",
 duration : "March 2022 - Present",
-tools : "Typescript, React, CloudScape and Lichess API."
+tools : "Typescript, React, CloudScape,ASP.NET and Lichess API."
 },
 
     {

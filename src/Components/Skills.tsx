@@ -69,6 +69,12 @@ items={[
         link : 'https://www.mysql.com/',
         level : "Well Versed, Extensive Exprience",
         },
+        {
+            Language : "ASP.NET Core",
+            value : 4.5,
+            link : 'https://dotnet.microsoft.com/en-us/apps/aspnet/apis',
+            level : "Extensive Knowledgde of the tool, Built a few APIs.",
+            },
     {
         Language : "React",
         value : 4.5,
