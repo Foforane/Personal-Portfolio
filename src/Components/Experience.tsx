@@ -32,11 +32,20 @@ cardDefinition={{
           }
       ]
 }}
-items={[{
-Company : "Amazon Web Service",
+items={[
+  {
+    Company : "Sipcom",
+    link : 'https://www.sipcom.com/',
+    title : "Junior Software Engineer",
+    description :"Developing Softwares.",
+    duration : "July 2023 - present",
+    tools : "..."
+    },
+  {
+Company : "Amazon Web Services",
 link : 'https://aws.amazon.com/',
 title : "Software Engineer Intern",
-description :"Developing tools and APIs to assist front-end teams in delighting our customers.",
+description :"Developing Tools for internal teams.",
 duration : "December 2022 - March 2023",
 tools : "Typescript, React and Git"
 },

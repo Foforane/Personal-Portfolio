@@ -3,7 +3,7 @@ import { SpaceBetween } from '@cloudscape-design/components';
 import Button from '@cloudscape-design/components/button'
 import Box from '@cloudscape-design/components/box';
 import { useNavigate } from 'react-router-dom';
-import me from '../../Cyber.jpeg'
+import me from '../../Cyber.jpeg';
 import './intro.css'
 function Intro(){
   const navigate = useNavigate();
